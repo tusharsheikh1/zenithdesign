@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight, Mountain, Bird } from 'lucide-react'; // Removed Sun, Moon
+import { Menu, X, ArrowRight } from 'lucide-react'; // Removed Mountain, Bird
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +13,12 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'হোম', href: '#' },
+    { name: 'হোম', href: '#home' },
     { name: 'আমাদের সম্পর্কে', href: '#about' },
     { name: 'সার্ভিস', href: '#service' },
     { name: 'পোর্টফলিও', href: '#portfolio' },
-    { name: 'প্যাকেজ', href: '#package' },
-    { name: 'টিম', href: '#team' },
+    { name: 'প্যাকেজ', href: '#pricing' },
+    { name: 'যোগাযোগ', href: '#contact' },
   ];
 
   return (
@@ -33,14 +33,6 @@ const Navbar: React.FC = () => {
           }
           .animate-shimmer {
             animation: shimmer 2.5s infinite linear;
-          }
-
-          @keyframes float-bird {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-3px) rotate(5deg); }
-          }
-          .group:hover .bird-icon {
-            animation: float-bird 2s ease-in-out infinite;
           }
 
           @keyframes fade-in-down {
@@ -63,18 +55,21 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto max-w-7xl px-6 flex items-center justify-between">
           
           {/* --- LOGO SECTION --- */}
-          <a href="#" className="flex items-center gap-4 group cursor-pointer">
-            <div className="relative h-[54px] w-[54px] flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-600 rounded-2xl shadow-lg shadow-indigo-500/25 border border-white/20 group-hover:shadow-indigo-500/40 group-hover:scale-105 transition-all duration-500 ease-out overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
-              <Mountain className="text-white absolute bottom-[-4px] h-8 w-8 drop-shadow-md z-10 transition-transform duration-500 group-hover:translate-y-1" strokeWidth={2} />
-              <Bird className="bird-icon text-white absolute top-3 right-3 h-4 w-4 drop-shadow-sm z-20" strokeWidth={2.5} />
+          <a href="#home" className="flex items-center gap-3 group cursor-pointer">
+            {/* Image Logo */}
+            <div className="relative h-12 w-12 md:h-14 md:w-14 flex-shrink-0 transition-transform duration-500 group-hover:scale-105">
+              <img 
+                src="/logo.png" 
+                alt="Zenith Design Logo" 
+                className="w-full h-full object-contain drop-shadow-md"
+              />
             </div>
             
             <div className="flex flex-col justify-center py-1">
-              <h1 className="text-[26px] font-extrabold leading-snug tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 group-hover:to-indigo-600 transition-all duration-500 pb-0.5">
+              <h1 className="text-[22px] md:text-[26px] font-extrabold leading-snug tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 group-hover:to-indigo-600 transition-all duration-500 pb-0.5">
                 জেনিথ ডিজাইন
               </h1>
-              <span className="text-[13px] font-bold text-indigo-600 dark:text-indigo-400 tracking-[0.15em] leading-none uppercase opacity-90 group-hover:opacity-100 group-hover:tracking-[0.2em] transition-all duration-500">
+              <span className="text-[11px] md:text-[13px] font-bold text-indigo-600 dark:text-indigo-400 tracking-[0.15em] leading-none uppercase opacity-90 group-hover:opacity-100 group-hover:tracking-[0.2em] transition-all duration-500">
                 আপনার বিশ্বস্ত পার্টনার
               </span>
             </div>
@@ -96,21 +91,17 @@ const Navbar: React.FC = () => {
 
           {/* --- RIGHT ACTIONS --- */}
           <div className="hidden md:flex items-center gap-4">
-            {/* Removed Dark Mode Toggle Button Here */}
-
-            <button className="group relative inline-flex items-center justify-center px-8 py-3 text-[15px] font-bold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700 rounded-full hover:shadow-[0_10px_40px_-10px_rgba(79,70,229,0.5)] hover:translate-y-[-2px] active:translate-y-[0px] overflow-hidden">
+            <a href="#contact" className="group relative inline-flex items-center justify-center px-8 py-3 text-[15px] font-bold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700 rounded-full hover:shadow-[0_10px_40px_-10px_rgba(79,70,229,0.5)] hover:translate-y-[-2px] active:translate-y-[0px] overflow-hidden">
               <div className="absolute inset-0 w-full h-full bg-white/20 -translate-x-full animate-shimmer" />
               <span className="relative z-10 flex items-center">
                 যোগাযোগ করুন
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
-            </button>
+            </a>
           </div>
 
           {/* --- MOBILE TOGGLE --- */}
           <div className="flex items-center gap-3 lg:hidden">
-            {/* Removed Dark Mode Toggle Button Here */}
-            
             <button 
               onClick={() => setIsOpen(!isOpen)} 
               className="p-2.5 text-slate-900 dark:text-white bg-white dark:bg-white/10 border border-slate-200 dark:border-white/5 rounded-full shadow-sm active:scale-90 transition-all hover:text-indigo-600"
@@ -126,16 +117,17 @@ const Navbar: React.FC = () => {
             {navLinks.map((link, idx) => (
               <a 
                 key={link.name} 
-                href={link.href} 
+                href={link.href}
+                onClick={() => setIsOpen(false)}
                 style={{ transitionDelay: `${idx * 50}ms` }}
                 className={`text-lg font-semibold text-slate-800 dark:text-slate-200 py-3 px-4 rounded-xl hover:bg-indigo-50 dark:hover:bg-white/5 hover:text-indigo-600 transition-all transform ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'}`}
               >
                 {link.name}
               </a>
             ))}
-            <button className="w-full mt-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-bold shadow-lg shadow-indigo-500/20 active:scale-[0.98] transition-transform">
+            <a href="#contact" onClick={() => setIsOpen(false)} className="w-full mt-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-bold shadow-lg shadow-indigo-500/20 active:scale-[0.98] transition-transform text-center block">
               যোগাযোগ করুন
-            </button>
+            </a>
           </div>
         </div>
       </nav>
