@@ -1,5 +1,5 @@
 import React from 'react';
-import { Twitter, Instagram, Facebook, Youtube, MapPin, Phone, Mail, Mountain, Bird, Heart } from 'lucide-react';
+import { Twitter, Instagram, Facebook, Youtube, MapPin, Phone, Mail, Mountain, Bird, } from 'lucide-react';
 
 const Footer: React.FC = () => {
   // Navigation Links Data
