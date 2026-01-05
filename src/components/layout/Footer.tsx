@@ -1,41 +1,32 @@
 import React from 'react';
 import { Twitter, Instagram, Facebook, Youtube, MapPin, Phone, Mail, Mountain, Bird, Heart } from 'lucide-react';
 
-// Updated Footer Data with actual Href links
-const footerData = [
-  {
-    title: 'কুইক লিঙ্ক',
-    links: [
-      { text: 'হোম', href: '#home' },
-      { text: 'আমাদের সম্পর্কে', href: '#about' },
-      { text: 'সার্ভিস', href: '#service' },
-      { text: 'পোর্টফলিও', href: '#portfolio' },
-      { text: 'টিম', href: '#team' },
-      { text: 'যোগাযোগ', href: '#contact' }
-    ]
-  },
-  {
-    title: 'সার্ভিসসমূহ',
-    links: [
-      { text: 'ওয়েব ডিজাইন', href: '#service' },
-      { text: 'সফটওয়্যার ডেভেলপমেন্ট', href: '#service' },
-      { text: 'এসইও অপ্টিমাইজেশন', href: '#service' },
-      { text: 'গ্রাফিক ডিজাইন', href: '#service' },
-      { text: 'ডিজিটাল মার্কেটিং', href: '#service' }
-    ]
-  },
-  {
-    title: 'সাপোর্ট',
-    links: [
-      { text: 'Privacy Policy', href: '#' },
-      { text: 'Terms of Service', href: '#' },
-      { text: 'Cookie Policy', href: '#' },
-      { text: 'Security Center', href: '#' }
-    ]
-  }
-];
-
 const Footer: React.FC = () => {
+  // Navigation Links Data
+  const footerData = [
+    {
+      title: 'কুইক লিঙ্ক',
+      links: [
+        { text: 'হোম', href: '#home' },
+        { text: 'আমাদের সম্পর্কে', href: '#about' },
+        { text: 'সার্ভিস', href: '#service' },
+        { text: 'পোর্টফলিও', href: '#portfolio' },
+        { text: 'টিম', href: '#team' },
+        { text: 'যোগাযোগ', href: '#contact' }
+      ]
+    },
+    {
+      title: 'সার্ভিসসমূহ',
+      links: [
+        { text: 'ওয়েব ডিজাইন', href: '#service' },
+        { text: 'সফটওয়্যার ডেভেলপমেন্ট', href: '#service' },
+        { text: 'এসইও অপ্টিমাইজেশন', href: '#service' },
+        { text: 'গ্রাফিক ডিজাইন', href: '#service' },
+        { text: 'ডিজিটাল মার্কেটিং', href: '#service' }
+      ]
+    }
+  ];
+
   return (
     <footer className="relative bg-white dark:bg-slate-950 pt-24 pb-12 overflow-hidden border-t border-slate-100 dark:border-slate-800">
       
@@ -98,7 +89,7 @@ const Footer: React.FC = () => {
               </div>
             ))}
 
-            {/* Contact Info */}
+            {/* Contact Info - Updated Phone Number */}
             <div className="space-y-6">
                 <h4 className="text-slate-900 dark:text-white font-bold text-sm uppercase tracking-widest border-l-4 border-indigo-500 pl-3">
                   যোগাযোগ
@@ -108,19 +99,21 @@ const Footer: React.FC = () => {
                     <div className="h-8 w-8 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:bg-indigo-500 group-hover:text-white transition-colors duration-300">
                       <MapPin size={16} className="text-indigo-500 group-hover:text-white transition-colors" />
                     </div>
-                    <span className="mt-1 font-medium">হাউজঃ মুন্সি বাড়ী, নয়ারহাট স্কুল সংলগ্ন, লালমনিরহাট</span>
+                    <span className="mt-1 font-medium">46, Banglabazar, Dhaka-1100</span>
                   </li>
                   <li className="flex gap-4 items-center text-sm text-slate-500 dark:text-slate-400 group">
                     <div className="h-8 w-8 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:bg-indigo-500 group-hover:text-white transition-colors duration-300">
                        <Phone size={16} className="text-indigo-500 group-hover:text-white transition-colors" />
                     </div>
-                    <span className="font-semibold text-slate-700 dark:text-slate-200">০১৮৪৯৮৩২১৭৮</span>
+                    <a href="tel:+8801339468355" className="font-semibold text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                      01339468355
+                    </a>
                   </li>
                   <li className="flex gap-4 items-center text-sm text-slate-500 dark:text-slate-400 group">
                     <div className="h-8 w-8 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:bg-indigo-500 group-hover:text-white transition-colors duration-300">
                       <Mail size={16} className="text-indigo-500 group-hover:text-white transition-colors" />
                     </div>
-                    <span className="font-medium">info@zenithdesign.com</span>
+                    <span className="font-medium">contact@zenithdesign.xyz</span>
                   </li>
                 </ul>
             </div>
