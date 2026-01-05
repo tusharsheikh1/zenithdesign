@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
             © ২০২৬ সকল স্বত্ব সংরক্ষিত <span className="font-bold text-indigo-600 dark:text-indigo-400">জেনিথ ডিজাইন</span>
           </p>
           <p className="text-xs text-slate-400 flex items-center gap-1 font-medium">
-            Made with <Heart size={12} className="text-red-500 fill-red-500 animate-pulse" /> in Bangladesh
+            Design by Zenith Design
           </p>
         </div>
       </div>
