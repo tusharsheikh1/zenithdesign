@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
     { name: 'আমাদের সম্পর্কে', href: '#about' },
     { name: 'সার্ভিস', href: '#service' },
     { name: 'পোর্টফলিও', href: '#portfolio' },
-    { name: 'প্যাকেজ', href: '#pricing' },
+    { name: 'প্রাইসিং', href: '#pricing' },
     { name: 'যোগাযোগ', href: '#contact' },
   ];
 

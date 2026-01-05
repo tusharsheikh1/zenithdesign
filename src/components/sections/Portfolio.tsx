@@ -18,7 +18,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="পোর্টফলিও" className="relative py-20 lg:py-32 overflow-hidden bg-slate-50 dark:bg-slate-950">
+    <section id="portfolio" className="relative py-20 lg:py-32 overflow-hidden bg-slate-50 dark:bg-slate-950">
       
       {/* 1. Background (Optimized for Mobile Performance) */}
       <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px]"></div>

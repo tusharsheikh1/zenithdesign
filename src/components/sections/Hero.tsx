@@ -192,10 +192,10 @@ const Hero = () => {
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             
             {/* Primary Button */}
-            <a href="#pricing" className="relative inline-flex h-12 md:h-14 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-50 group shadow-lg shadow-indigo-500/30">
+            <a href="#portfolio" className="relative inline-flex h-12 md:h-14 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-50 group shadow-lg shadow-indigo-500/30">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-indigo-600 px-8 py-1 text-base md:text-lg font-bold text-white backdrop-blur-3xl transition-all group-hover:bg-indigo-700">
-                প্যাকেজ দেখুন
+                প্রজেক্ট দেখুন
               </span>
             </a>
 

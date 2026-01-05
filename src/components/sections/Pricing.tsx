@@ -6,23 +6,29 @@ const Pricing = () => {
     {
       title: "বেসিক শুরু",
       price: "৩৫০০",
+      // Added specific WhatsApp link
+      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Basic%20Package%20(3500/-)",
       features: ["১ পেজের ল্যান্ডিং পেজ", "মোবাইল ফ্রেন্ডলি ডিজাইন", "ফাস্ট লোডিং স্পিড", "বেসিক এসইও (SEO)", "সোশ্যাল মিডিয়া লিঙ্ক", "১ মাসের ফ্রি সাপোর্ট"]
     },
     {
       title: "স্ট্যান্ডার্ড বিজনেস",
       price: "৮০০০",
       popular: true,
+      // Added specific WhatsApp link
+      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Standard%20Business%20Package%20(8000/-)",
       features: ["৫-১০ পেজের ডায়নামিক ওয়েবসাইট", "প্রিমিয়াম ইউজার ইন্টারফেস (UI)", "এডমিন প্যানেল (Control Panel)", "ফ্রি .com ডোমেইন (১ বছর)", "লাইভ চ্যাট অপশন", "৩ মাসের ফ্রি সাপোর্ট", "গুগল ম্যাপ ইন্টিগ্রেশন"]
     },
     {
       title: "আলটিমেট সল্যুশন",
       price: "১৮৫০০",
+      // Added specific WhatsApp link
+      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Ultimate%20Solution%20Package%20(18500/-)",
       features: ["সম্পূর্ণ ই-কমার্স ফাংশনালিটি", "ইনভেন্টরি ও অর্ডার ম্যানেজমেন্ট", "বিকাশ/নগদ পেমেন্ট গেটওয়ে", "অ্যাডভান্সড এসইও ও সিকিউরিটি", "ফেসবুক পিক্সেল ও অ্যানালিটিক্স", "৬ মাসের ফ্রি মেইনটেনেন্স", "আনলিমিটেড প্রোডাক্ট আপলোড"]
     }
   ];
 
   return (
-    <section id="প্যাকেজ" className="relative py-24 lg:py-32 overflow-hidden bg-slate-50 dark:bg-slate-950">
+    <section id="pricing" className="relative py-24 lg:py-32 overflow-hidden bg-slate-50 dark:bg-slate-950">
       
       {/* 1. Background Effects */}
       <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px]"></div>
@@ -56,11 +62,12 @@ const Pricing = () => {
         {/* 3. Pricing Grid */}
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-center mb-20">
           {packages.map((pkg, idx) => (
+            /* The href prop is now passed to PriceCard */
             <PriceCard key={idx} {...pkg} delay={idx * 0.1} />
           ))}
         </div>
 
-        {/* 4. Modern "Custom" Banner */}
+        {/* 4. Modern "Custom" Banner with WhatsApp Button */}
         <div className="max-w-5xl mx-auto">
           <div className="group relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-800 dark:to-slate-900 p-1">
             {/* Gradient Border Glow */}
@@ -81,10 +88,15 @@ const Pricing = () => {
                 </p>
               </div>
 
-              <button className="relative z-10 whitespace-nowrap px-8 py-4 bg-white text-slate-900 hover:bg-indigo-50 rounded-2xl font-bold transition-all shadow-xl shadow-white/5 flex items-center gap-2 group/btn">
+              <a 
+                href="https://wa.me/8801339468355"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative z-10 whitespace-nowrap px-8 py-4 bg-white text-slate-900 hover:bg-indigo-50 rounded-2xl font-bold transition-all shadow-xl shadow-white/5 flex items-center gap-2 group/btn"
+              >
                 সরাসরি কথা বলুন
                 <ArrowRight size={20} className="group-hover/btn:translate-x-1 transition-transform" />
-              </button>
+              </a>
             </div>
           </div>
         </div>

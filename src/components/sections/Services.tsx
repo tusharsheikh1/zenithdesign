@@ -3,7 +3,7 @@ import { ServiceCard } from '../ui/ServiceCard';
 
 const Services = () => {
   return (
-    <section id="সার্ভিস" className="relative py-24 overflow-hidden bg-slate-50 dark:bg-slate-950">
+    <section id="service" className="relative py-24 overflow-hidden bg-slate-50 dark:bg-slate-950">
       
       {/* 1. Consistent Background Pattern */}
       <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px]"></div>

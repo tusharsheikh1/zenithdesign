@@ -7,8 +7,77 @@ export interface PortfolioItem {
 }
 
 export const portfolioItems: PortfolioItem[] = [
-  { id: 1, category: 'web-dijan', title: 'ফাকল পুলিশ লাইন্স স্কুল অ্যান্ড কলেজ', img: 'https://www.creativedesign.com.bd/assets/images/portfolio/1766477223phakal.jpg', url: 'https://phakal.edu.bd/' },
-  { id: 2, category: 'web-dijan', title: 'Astha Online Shop', img: 'https://www.creativedesign.com.bd/assets/images/portfolio/17664771611.jpg', url: 'https://asthaonlinnebd.shop/' },
-  { id: 3, category: 'web-dijan', title: 'Nabanno BD', img: 'https://www.creativedesign.com.bd/assets/images/portfolio/1766477105nobanno.jpg', url: 'https://nabannobd.com' },
-  { id: 4, category: 'web-dijan', title: 'Quick Pharma', img: 'https://www.creativedesign.com.bd/assets/images/portfolio/1766477053gro.jpg', url: 'https://quickpharma.com.bd/' },
+  // Existing items with updated URLs
+  { 
+    id: 10, 
+    category: 'web-dijan', 
+    title: 'E-commerce Project Oppsbd', 
+    img: '/oppsbd.png', 
+    url: 'http://oppsbd.com/' 
+  },
+  { 
+    id: 1, 
+    category: 'web-dijan', 
+    title: 'E-commerce Project Naabamart', 
+    img: '/naabamart.png', 
+    url: 'http://naabamart.com/' 
+  },
+  { 
+    id: 1, 
+    category: 'web-dijan', 
+    title: 'E-commerce Project 1', 
+    img: '/ecom1.png', 
+    url: 'http://ecom1.zenithdesign.xyz/' 
+  },
+  { 
+    id: 2, 
+    category: 'web-dijan', 
+    title: 'E-commerce Project 2', 
+    img: '/ecom2.png', 
+    url: 'http://ecom2.zenithdesign.xyz/' 
+  },
+  { 
+    id: 3, 
+    category: 'web-dijan', 
+    title: 'E-commerce Project 3', 
+    img: '/ecom3.png', 
+    url: 'http://ecom3.zenithdesign.xyz/' 
+  },
+  { 
+    id: 4, 
+    category: 'web-dijan', 
+    title: 'E-commerce Project 4', 
+    img: '/ecom4.png', 
+    url: 'http://ecom4.zenithdesign.xyz/' 
+  },
+  
+  { 
+    id: 8, 
+    category: 'web-dijan', 
+    title: 'Ecom Project 8', 
+    img: '/ecom8.png', 
+    url: 'http://ecom8.zenithdesign.xyz/' 
+  },
+  { 
+    id: 9, 
+    category: 'web-dijan', 
+    title: 'Ecom Project 9', 
+    img: '/ecom9.png', 
+    url: 'http://ecom9.zenithdesign.xyz/' 
+  },
+  { 
+    id: 11, 
+    category: 'web-dijan', 
+    title: 'Blood Bank Project', 
+    img: '/jnureddrop.png', 
+    url: 'http://jnureddrop.com/' 
+  },
+  { 
+    id: 11, 
+    category: 'web-dijan', 
+    title: 'To let Project', 
+    img: '/jnumate.png', 
+    url: 'http://jnumate.com/' 
+  },
+ 
 ];
