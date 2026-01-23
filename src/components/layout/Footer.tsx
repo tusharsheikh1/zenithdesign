@@ -7,12 +7,11 @@ const Footer: React.FC = () => {
     {
       title: 'কুইক লিঙ্ক',
       links: [
-        { text: 'হোম', href: '#home' },
-        { text: 'আমাদের সম্পর্কে', href: '#about' },
-        { text: 'সার্ভিস', href: '#service' },
-        { text: 'পোর্টফলিও', href: '#portfolio' },
-        { text: 'টিম', href: '#team' },
-        { text: 'যোগাযোগ', href: '#contact' }
+        { text: 'হোম', href: '/' },
+      { text: 'আমাদের সম্পর্কে', href: '/about' },
+      { text: 'সার্ভিস', href: '/services' },
+      { text: 'পোর্টফলিও', href: '/portfolio' },
+      { text: 'যোগাযোগ', href: '/contact' }
       ]
     },
     {

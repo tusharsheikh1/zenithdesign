@@ -1,25 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react'; // Removed Mountain, Bird
+import { Menu, X, ArrowRight } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
-  // 1. Handle Scroll Effect
+  // ১. স্ক্রোল ইফেক্ট হ্যান্ডেল করা
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'হোম', href: '#home' },
-    { name: 'আমাদের সম্পর্কে', href: '#about' },
-    { name: 'সার্ভিস', href: '#service' },
-    { name: 'পোর্টফলিও', href: '#portfolio' },
-    { name: 'প্রাইসিং', href: '#pricing' },
-    { name: 'যোগাযোগ', href: '#contact' },
-  ];
+ const navLinks = [
+  { name: 'হোম', href: '/' },
+  { name: 'আমাদের সম্পর্কে', href: '/about' },
+  { name: 'সার্ভিস', href: '/services' },
+  { name: 'পোর্টফলিও', href: '/portfolio' },
+  { name: 'প্রাইসিং', href: '/pricing' },
+  { name: 'টিম', href: '/team' },
+  { name: 'যোগাযোগ', href: '/contact' },
+];
 
   return (
     <>
@@ -54,9 +57,8 @@ const Navbar: React.FC = () => {
       }`}>
         <div className="container mx-auto max-w-7xl px-6 flex items-center justify-between">
           
-          {/* --- LOGO SECTION --- */}
-          <a href="#home" className="flex items-center gap-3 group cursor-pointer">
-            {/* Image Logo */}
+          {/* --- লোগো সেকশন --- */}
+          <Link to="/" className="flex items-center gap-3 group cursor-pointer">
             <div className="relative h-12 w-12 md:h-14 md:w-14 flex-shrink-0 transition-transform duration-500 group-hover:scale-105">
               <img 
                 src="/logo.png" 
@@ -73,34 +75,38 @@ const Navbar: React.FC = () => {
                 আপনার বিশ্বস্ত পার্টনার
               </span>
             </div>
-          </a>
+          </Link>
 
-          {/* --- DESKTOP NAVIGATION --- */}
+          {/* --- ডেস্কটপ নেভিগেশন --- */}
           <div className="hidden lg:flex items-center p-1.5 bg-white/60 dark:bg-slate-900/50 border border-slate-200/50 dark:border-white/5 rounded-full backdrop-blur-md shadow-sm transition-all duration-300 hover:bg-white/90 dark:hover:bg-slate-900/80">
             {navLinks.map((link) => (
-              <a 
+              <Link 
                 key={link.name} 
-                href={link.href} 
-                className="relative px-5 py-2 text-[16px] font-semibold text-slate-600 dark:text-slate-300 transition-all rounded-full hover:text-indigo-600 dark:hover:text-white group/link overflow-hidden"
+                to={link.href} 
+                className={`relative px-5 py-2 text-[16px] font-semibold transition-all rounded-full group/link overflow-hidden ${
+                  location.pathname === link.href 
+                    ? 'text-indigo-600 dark:text-white bg-indigo-50/50 dark:bg-white/10' 
+                    : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-white'
+                }`}
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-blue-500/10 opacity-0 group-hover/link:opacity-100 transition-opacity duration-300 rounded-full" />
                 <span className="relative z-10">{link.name}</span>
-              </a>
+              </Link>
             ))}
           </div>
 
-          {/* --- RIGHT ACTIONS --- */}
+          {/* --- রাইট অ্যাকশনস --- */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#contact" className="group relative inline-flex items-center justify-center px-8 py-3 text-[15px] font-bold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700 rounded-full hover:shadow-[0_10px_40px_-10px_rgba(79,70,229,0.5)] hover:translate-y-[-2px] active:translate-y-[0px] overflow-hidden">
+            <Link to="/#contact" className="group relative inline-flex items-center justify-center px-8 py-3 text-[15px] font-bold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700 rounded-full hover:shadow-[0_10px_40px_-10px_rgba(79,70,229,0.5)] hover:translate-y-[-2px] active:translate-y-[0px] overflow-hidden">
               <div className="absolute inset-0 w-full h-full bg-white/20 -translate-x-full animate-shimmer" />
               <span className="relative z-10 flex items-center">
                 যোগাযোগ করুন
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
-            </a>
+            </Link>
           </div>
 
-          {/* --- MOBILE TOGGLE --- */}
+          {/* --- মোবাইল টগল --- */}
           <div className="flex items-center gap-3 lg:hidden">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
@@ -111,23 +117,33 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* --- MOBILE MENU --- */}
+        {/* --- মোবাইল মেনু --- */}
         <div className={`lg:hidden absolute top-full left-0 w-full bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur-xl border-b border-slate-100 dark:border-white/10 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-4'}`}>
           <div className="px-6 py-8 flex flex-col gap-2">
             {navLinks.map((link, idx) => (
-              <a 
+              <Link 
                 key={link.name} 
-                href={link.href}
+                to={link.href}
                 onClick={() => setIsOpen(false)}
                 style={{ transitionDelay: `${idx * 50}ms` }}
-                className={`text-lg font-semibold text-slate-800 dark:text-slate-200 py-3 px-4 rounded-xl hover:bg-indigo-50 dark:hover:bg-white/5 hover:text-indigo-600 transition-all transform ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'}`}
+                className={`text-lg font-semibold py-3 px-4 rounded-xl transition-all transform ${
+                  isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+                } ${
+                  location.pathname === link.href
+                    ? 'bg-indigo-50 dark:bg-white/10 text-indigo-600 dark:text-white'
+                    : 'text-slate-800 dark:text-slate-200 hover:bg-indigo-50 dark:hover:bg-white/5 hover:text-indigo-600'
+                }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
-            <a href="#contact" onClick={() => setIsOpen(false)} className="w-full mt-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-bold shadow-lg shadow-indigo-500/20 active:scale-[0.98] transition-transform text-center block">
+            <Link 
+              to="/#contact" 
+              onClick={() => setIsOpen(false)} 
+              className="w-full mt-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-bold shadow-lg shadow-indigo-500/20 active:scale-[0.98] transition-transform text-center block"
+            >
               যোগাযোগ করুন
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
