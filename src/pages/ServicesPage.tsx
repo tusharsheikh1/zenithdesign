@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import Services from '../components/sections/Services';
 import Brands from '../components/sections/Brands';
 

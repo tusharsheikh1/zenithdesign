@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import Pricing from '../components/sections/Pricing';
 
 const PricingPage = () => {
