@@ -27,28 +27,28 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'web-dijan', 
     title: 'E-commerce Project 1', 
     img: '/ecom1.png', 
-    url: 'http://ecom1.zenithdesign.xyz/' 
+    url: 'http://1.naabamart.com/' 
   },
   { 
     id: 2, 
     category: 'web-dijan', 
     title: 'E-commerce Project 2', 
     img: '/ecom2.png', 
-    url: 'http://ecom2.zenithdesign.xyz/' 
+    url: 'http://2.naabamart.com/' 
   },
   { 
     id: 3, 
     category: 'web-dijan', 
     title: 'E-commerce Project 3', 
     img: '/ecom3.png', 
-    url: 'http://ecom3.zenithdesign.xyz/' 
+    url: 'http://3.naabamart.com/' 
   },
   { 
     id: 4, 
     category: 'web-dijan', 
     title: 'E-commerce Project 4', 
     img: '/ecom4.png', 
-    url: 'http://ecom4.zenithdesign.xyz/' 
+    url: 'http://4.naabamart.com/' 
   },
   
   { 
@@ -56,14 +56,14 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'web-dijan', 
     title: 'Ecom Project 8', 
     img: '/ecom8.png', 
-    url: 'http://ecom8.zenithdesign.xyz/' 
+    url: 'http://8.naabamart.com' 
   },
   { 
     id: 9, 
     category: 'web-dijan', 
     title: 'Ecom Project 9', 
     img: '/ecom9.png', 
-    url: 'http://ecom9.zenithdesign.xyz/' 
+    url: 'http://9.naabamart.com' 
   },
   { 
     id: 11, 
