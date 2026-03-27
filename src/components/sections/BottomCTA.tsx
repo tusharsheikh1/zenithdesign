@@ -21,20 +21,20 @@ const BottomCTA = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/10 backdrop-blur-md text-emerald-300 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6 md:mb-8 shadow-lg">
               <Sparkles size={12} className="text-emerald-400 fill-emerald-400" />
-              রেডি টু স্টার্ট?
+              Ready to Start?
             </div>
 
             {/* Headline */}
             <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8 tracking-tight leading-[1.2] md:leading-[1.1]">
-              শুরু হোক আপনার <br className="hidden md:block" />
+              Let's Start Your <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-white to-purple-300 drop-shadow-sm">
-                 অনলাইন বিজনেস
+                 Online Business
               </span>
             </h2>
             
             <p className="text-slate-300 text-base md:text-xl max-w-xl mx-auto mb-10 md:mb-12 leading-relaxed font-medium px-2">
-              আপনার ব্যবসার ডিজিটাল ট্রান্সফর্মেশনের জন্য আমরা আছি আপনার পাশে। 
-              আজই ফ্রি কনসালটেন্সি নিন।
+              We are by your side for your business's digital transformation.
+              Get a free consultation today.
             </p>
 
             {/* Buttons */}
@@ -59,7 +59,7 @@ const BottomCTA = () => {
                 className="group w-full sm:w-auto px-8 py-4 md:py-5 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-xl md:rounded-2xl font-bold text-base md:text-lg flex items-center justify-center gap-3 backdrop-blur-md transition-all duration-300 hover:scale-[1.02]"
               >
                 <MessageCircle size={20} className="text-white group-hover:text-purple-300 transition-colors" />
-                <span>মেসেজ পাঠান</span>
+                <span>Send Message</span>
               </a>
               
             </div>
@@ -68,12 +68,12 @@ const BottomCTA = () => {
             <div className="mt-10 md:mt-12 flex flex-wrap justify-center gap-4 md:gap-8 opacity-60">
                <div className="flex items-center gap-2 text-xs md:text-sm text-slate-300 font-medium">
                   <Zap size={14} className="text-yellow-400 fill-yellow-400" />
-                  <span>২৪/৭ সাপোর্ট</span>
+                  <span>24/7 Support</span>
                </div>
                <div className="hidden md:block w-1 h-1 bg-slate-500 rounded-full"></div>
                <div className="flex items-center gap-2 text-xs md:text-sm text-slate-300 font-medium">
                   <Zap size={14} className="text-blue-400 fill-blue-400" />
-                  <span>ফ্রি কনসালটেন্সি</span>
+                  <span>Free Consultancy</span>
                </div>
             </div>
 

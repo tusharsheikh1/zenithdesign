@@ -7,7 +7,7 @@ const ServicesPage = () => {
   return (
     <div className="pt-20">
       <div className="bg-slate-900 py-16 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-white">আমাদের <span className="text-orange-500">সেবাসমূহ</span></h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-white">Our <span className="text-orange-500">Services</span></h1>
       </div>
       <Services />
       <Brands />

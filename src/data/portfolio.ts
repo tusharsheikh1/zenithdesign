@@ -15,7 +15,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 1, 
     category: 'web-design', 
     title: 'E-commerce Project Naabamart', 
-    description: 'একটি পূর্ণাঙ্গ অনলাইন বুকশপ প্ল্যাটফর্ম।',
+    description: 'A complete online bookshop platform.',
     img: '/naabamart.png', 
     url: 'http://naabamart.com/',
     tags: ['Laravel', 'React', 'Tailwind']
@@ -24,7 +24,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 2, 
     category: 'web-design', 
     title: 'E-commerce Project Oppsbd', 
-    description: 'আধুনিক ই-কমার্স সল্যুশন এবং বিজনেস প্ল্যাটফর্ম।',
+    description: 'Modern e-commerce solution and business platform.',
     img: '/oppsbd.png', 
     url: 'http://oppsbd.com/',
     tags: ['PHP', 'MySQL', 'UI/UX']
@@ -33,7 +33,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 3, 
     category: 'web-design', 
     title: 'E-commerce Project 1', 
-    description: 'মাল্টি-ফাংশনাল শপিং এক্সপেরিয়েন্স।',
+    description: 'Multi-functional shopping experience.',
     img: '/ecom1.png', 
     url: 'http://1.naabamart.com/',
     tags: ['E-commerce', 'Responsive']
@@ -42,7 +42,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 4, 
     category: 'web-design', 
     title: 'E-commerce Project 2', 
-    description: 'ইউজার ফ্রেন্ডলি ইন্টারফেস সহ ডায়নামিক স্টোর।',
+    description: 'Dynamic store with a user-friendly interface.',
     img: '/ecom2.png', 
     url: 'http://2.naabamart.com/',
     tags: ['Web Design', 'Cart']
@@ -51,7 +51,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 5, 
     category: 'web-design', 
     title: 'E-commerce Project 3', 
-    description: 'আধুনিক ফিচার সমৃদ্ধ অনলাইন শপ।',
+    description: 'Modern feature-rich online shop.',
     img: '/ecom3.png', 
     url: 'http://3.naabamart.com/',
     tags: ['Laravel', 'Bootstrap']
@@ -60,7 +60,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 6, 
     category: 'web-design', 
     title: 'E-commerce Project 4', 
-    description: 'ক্লিন এবং মডার্ন ডিজাইন ই-কমার্স।',
+    description: 'Clean and modern design e-commerce.',
     img: '/ecom4.png', 
     url: 'http://4.naabamart.com/',
     tags: ['React', 'API']
@@ -69,7 +69,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 7, 
     category: 'web-design', 
     title: 'Ecom Project 8', 
-    description: 'ফাস্ট লোডিং এবং অপ্টিমাইজড ই-কমার্স প্ল্যাটফর্ম।',
+    description: 'Fast loading and optimized e-commerce platform.',
     img: '/ecom8.png', 
     url: 'http://8.naabamart.com',
     tags: ['Performance', 'SEO']
@@ -78,7 +78,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 8, 
     category: 'web-design', 
     title: 'Ecom Project 9', 
-    description: 'অ্যাডভান্সড ইনভেন্টরি ম্যানেজমেন্ট সল্যুশন।',
+    description: 'Advanced inventory management solution.',
     img: '/ecom9.png', 
     url: 'http://9.naabamart.com',
     tags: ['Dashboard', 'React']
@@ -87,7 +87,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 9, 
     category: 'software', 
     title: 'Blood Bank Project', 
-    description: 'রক্তদান এবং ডোনার ম্যানেজমেন্ট সিস্টেম (Jnureddrop)।',
+    description: 'Blood donation and donor management system (Jnureddrop).',
     img: '/jnureddrop.png', 
     url: 'http://jnureddrop.com/',
     tags: ['Firebase', 'Real-time']
@@ -96,7 +96,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 10, 
     category: 'software', 
     title: 'To let Project', 
-    description: 'বাসা এবং ব্যাচেলর মেস খোঁজার ডিজিটাল প্ল্যাটফর্ম (JnuMate)।',
+    description: 'Digital platform for finding houses and bachelor messes (JnuMate).',
     img: '/jnumate.png', 
     url: 'http://jnumate.com/',
     tags: ['Next.js', 'PostgreSQL']

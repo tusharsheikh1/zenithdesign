@@ -52,7 +52,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, desc, col
 
         {/* 5. Hover Action (Arrow) */}
         <div className="flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-          বিস্তারিত দেখুন <ArrowRight size={16} />
+          View Details <ArrowRight size={16} />
         </div>
       </div>
     </motion.div>

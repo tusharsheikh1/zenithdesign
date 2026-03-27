@@ -5,23 +5,23 @@ const Footer: React.FC = () => {
   // Navigation Links Data
   const footerData = [
     {
-      title: 'কুইক লিঙ্ক',
+      title: 'Quick Links',
       links: [
-        { text: 'হোম', href: '/' },
-      { text: 'আমাদের সম্পর্কে', href: '/about' },
-      { text: 'সার্ভিস', href: '/services' },
-      { text: 'পোর্টফলিও', href: '/portfolio' },
-      { text: 'যোগাযোগ', href: '/contact' }
+        { text: 'Home', href: '/' },
+      { text: 'About Us', href: '/about' },
+      { text: 'Services', href: '/services' },
+      { text: 'Portfolio', href: '/portfolio' },
+      { text: 'Contact', href: '/contact' }
       ]
     },
     {
-      title: 'সার্ভিসসমূহ',
+      title: 'Services',
       links: [
-        { text: 'ওয়েব ডিজাইন', href: '#service' },
-        { text: 'সফটওয়্যার ডেভেলপমেন্ট', href: '#service' },
-        { text: 'এসইও অপ্টিমাইজেশন', href: '#service' },
-        { text: 'গ্রাফিক ডিজাইন', href: '#service' },
-        { text: 'ডিজিটাল মার্কেটিং', href: '#service' }
+        { text: 'Web Design', href: '#service' },
+        { text: 'Software Development', href: '#service' },
+        { text: 'SEO Optimization', href: '#service' },
+        { text: 'Graphics Design', href: '#service' },
+        { text: 'Digital Marketing', href: '#service' }
       ]
     }
   ];
@@ -46,16 +46,16 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white leading-none tracking-tight">
-                  জেনিথ ডিজাইন
+                  Zenith Design
                 </h2>
                 <span className="text-xs font-bold text-indigo-500 uppercase tracking-[0.2em]">
-                  গ্রোথ পার্টনার
+                  Growth Partner
                 </span>
               </div>
             </a>
 
             <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-base max-w-xs font-medium">
-              আমরা ছোট এবং মাঝারি ব্যবসার জন্য আধুনিক ডিজিটাল সমাধান প্রদান করি। আপনার ব্যবসার প্রসারে আমরা সর্বদা পাশে আছি।
+              We provide modern digital solutions for small and medium businesses. We are always by your side to expand your business.
             </p>
 
             <div className="flex gap-3">
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
             {/* Contact Info - Updated Phone Number */}
             <div className="space-y-6">
                 <h4 className="text-slate-900 dark:text-white font-bold text-sm uppercase tracking-widest border-l-4 border-indigo-500 pl-3">
-                  যোগাযোগ
+                  Contact
                 </h4>
                 <ul className="space-y-5">
                   <li className="flex gap-4 items-start text-sm text-slate-500 dark:text-slate-400 group">
@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-slate-500 dark:text-slate-500 flex items-center gap-1 font-medium">
-            © ২০২৬ সকল স্বত্ব সংরক্ষিত <span className="font-bold text-indigo-600 dark:text-indigo-400">জেনিথ ডিজাইন</span>
+            © 2026 All Rights Reserved <span className="font-bold text-indigo-600 dark:text-indigo-400">Zenith Design</span>
           </p>
           <p className="text-xs text-slate-400 flex items-center gap-1 font-medium">
             Design by Zenith Design

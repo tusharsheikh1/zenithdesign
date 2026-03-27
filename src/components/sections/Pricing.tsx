@@ -4,26 +4,44 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 const Pricing = () => {
   const packages = [
     {
-      title: "বেসিক শুরু",
-      price: "৩৫০০",
-      // Added specific WhatsApp link
-      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Basic%20Package%20(3500/-)",
-      features: ["১ পেজের ল্যান্ডিং পেজ", "মোবাইল ফ্রেন্ডলি ডিজাইন", "ফাস্ট লোডিং স্পিড", "বেসিক এসইও (SEO)", "সোশ্যাল মিডিয়া লিঙ্ক", "১ মাসের ফ্রি সাপোর্ট"]
+      title: "Starter",
+      price: "50,000",
+      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Starter%20Package%20(50,000/-)",
+      features: [
+        "Laravel-React eCommerce Core",
+        "Product & Order Management",
+        "Customer & Inventory Control",
+        "Payment & Shipping Integration",
+        "Standard Admin Dashboard",
+        "1 Month Free Support"
+      ]
     },
     {
-      title: "স্ট্যান্ডার্ড বিজনেস",
-      price: "৮০০০",
+      title: "Pro",
+      price: "150,000",
       popular: true,
-      // Added specific WhatsApp link
-      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Standard%20Business%20Package%20(8000/-)",
-      features: ["৫-১০ পেজের ডায়নামিক ওয়েবসাইট", "প্রিমিয়াম ইউজার ইন্টারফেস (UI)", "এডমিন প্যানেল (Control Panel)", "ফ্রি .com ডোমেইন (১ বছর)", "লাইভ চ্যাট অপশন", "৩ মাসের ফ্রি সাপোর্ট", "গুগল ম্যাপ ইন্টিগ্রেশন"]
+      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Pro%20Package%20(150,000/-)",
+      features: [
+        "All Starter Features",
+        "Unlimited Landing Page Builder",
+        "Automated SMS Notifications",
+        "One-Click Steadfast Integration",
+        "Analytics (View & Cart Tracking)",
+        "3 Months Free Support"
+      ]
     },
     {
-      title: "আলটিমেট সল্যুশন",
-      price: "১৮৫০০",
-      // Added specific WhatsApp link
-      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Ultimate%20Solution%20Package%20(18500/-)",
-      features: ["সম্পূর্ণ ই-কমার্স ফাংশনালিটি", "ইনভেন্টরি ও অর্ডার ম্যানেজমেন্ট", "বিকাশ/নগদ পেমেন্ট গেটওয়ে", "অ্যাডভান্সড এসইও ও সিকিউরিটি", "ফেসবুক পিক্সেল ও অ্যানালিটিক্স", "৬ মাসের ফ্রি মেইনটেনেন্স", "আনলিমিটেড প্রোডাক্ট আপলোড"]
+      title: "Advance",
+      price: "300,000",
+      href: "https://wa.me/8801339468355?text=Hello,%20I%20am%20interested%20in%20the%20Advance%20Package%20(300,000/-)",
+      features: [
+        "All Pro Features",
+        "Incomplete Order Tracking",
+        "Fraud Protection (Block Fakes)",
+        "Courier Intelligence History",
+        "Advanced Product Insights",
+        "6 Months Free Maintenance"
+      ]
     }
   ];
 
@@ -44,25 +62,24 @@ const Pricing = () => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
             </span>
             <span className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">
-              বেস্ট প্রাইসিং প্ল্যান
+              Best Pricing Plans
             </span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">
-            স্বচ্ছ বাজেট, <br />
+            Transparent Budget, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">
-              কোনো গোপন চার্জ নেই
+              No Hidden Charges
             </span>
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            আপনার ব্যবসার আকার যাই হোক না কেন, আমাদের কাছে আপনার জন্য সঠিক সল্যুশন রয়েছে।
+            Whatever the size of your business, we have the right solution for you.
           </p>
         </div>
 
         {/* 3. Pricing Grid */}
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-center mb-20">
           {packages.map((pkg, idx) => (
-            /* The href prop is now passed to PriceCard */
             <PriceCard key={idx} {...pkg} delay={idx * 0.1} />
           ))}
         </div>
@@ -81,10 +98,10 @@ const Pricing = () => {
               <div className="text-center md:text-left relative z-10">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 flex items-center justify-center md:justify-start gap-3">
                   <Sparkles className="text-yellow-400" />
-                  কাস্টম বা ভিন্ন কিছু প্রয়োজন?
+                  Need something custom or different?
                 </h3>
                 <p className="text-slate-400 text-lg">
-                  আপনার স্পেসিফিক রিকোয়ারমেন্ট অনুযায়ী আমরা <span className="text-indigo-400 font-semibold">কাস্টম কোটেশন</span> প্রদান করি।
+                  We provide <span className="text-indigo-400 font-semibold">custom quotations</span> based on your specific requirements.
                 </p>
               </div>
 
@@ -94,7 +111,7 @@ const Pricing = () => {
                 rel="noopener noreferrer"
                 className="relative z-10 whitespace-nowrap px-8 py-4 bg-white text-slate-900 hover:bg-indigo-50 rounded-2xl font-bold transition-all shadow-xl shadow-white/5 flex items-center gap-2 group/btn"
               >
-                সরাসরি কথা বলুন
+                Talk directly
                 <ArrowRight size={20} className="group-hover/btn:translate-x-1 transition-transform" />
               </a>
             </div>

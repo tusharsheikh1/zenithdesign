@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
-  // ১. স্ক্রোল ইফেক্ট হ্যান্ডেল করা
+  // 1. Handling Scroll Effect
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
@@ -15,13 +15,13 @@ const Navbar: React.FC = () => {
   }, []);
 
  const navLinks = [
-  { name: 'হোম', href: '/' },
-  { name: 'আমাদের সম্পর্কে', href: '/about' },
-  { name: 'সার্ভিস', href: '/services' },
-  { name: 'পোর্টফলিও', href: '/portfolio' },
-  { name: 'প্রাইসিং', href: '/pricing' },
-  { name: 'টিম', href: '/team' },
-  { name: 'যোগাযোগ', href: '/contact' },
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Portfolio', href: '/portfolio' },
+  { name: 'Pricing', href: '/pricing' },
+  { name: 'Team', href: '/team' },
+  { name: 'Contact', href: '/contact' },
 ];
 
   return (
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
       }`}>
         <div className="container mx-auto max-w-7xl px-6 flex items-center justify-between">
           
-          {/* --- লোগো সেকশন --- */}
+          {/* --- Logo Section --- */}
           <Link to="/" className="flex items-center gap-3 group cursor-pointer">
             <div className="relative h-12 w-12 md:h-14 md:w-14 flex-shrink-0 transition-transform duration-500 group-hover:scale-105">
               <img 
@@ -69,15 +69,15 @@ const Navbar: React.FC = () => {
             
             <div className="flex flex-col justify-center py-1">
               <h1 className="text-[22px] md:text-[26px] font-extrabold leading-snug tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 group-hover:to-indigo-600 transition-all duration-500 pb-0.5">
-                জেনিথ ডিজাইন
+                Zenith Design
               </h1>
               <span className="text-[11px] md:text-[13px] font-bold text-indigo-600 dark:text-indigo-400 tracking-[0.15em] leading-none uppercase opacity-90 group-hover:opacity-100 group-hover:tracking-[0.2em] transition-all duration-500">
-                আপনার বিশ্বস্ত পার্টনার
+                Your Trusted Partner
               </span>
             </div>
           </Link>
 
-          {/* --- ডেস্কটপ নেভিগেশন --- */}
+          {/* --- Desktop Navigation --- */}
           <div className="hidden lg:flex items-center p-1.5 bg-white/60 dark:bg-slate-900/50 border border-slate-200/50 dark:border-white/5 rounded-full backdrop-blur-md shadow-sm transition-all duration-300 hover:bg-white/90 dark:hover:bg-slate-900/80">
             {navLinks.map((link) => (
               <Link 
@@ -95,18 +95,18 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          {/* --- রাইট অ্যাকশনস --- */}
+          {/* --- Right Actions --- */}
           <div className="hidden md:flex items-center gap-4">
             <Link to="/#contact" className="group relative inline-flex items-center justify-center px-8 py-3 text-[15px] font-bold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700 rounded-full hover:shadow-[0_10px_40px_-10px_rgba(79,70,229,0.5)] hover:translate-y-[-2px] active:translate-y-[0px] overflow-hidden">
               <div className="absolute inset-0 w-full h-full bg-white/20 -translate-x-full animate-shimmer" />
               <span className="relative z-10 flex items-center">
-                যোগাযোগ করুন
+                Contact Us
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
             </Link>
           </div>
 
-          {/* --- মোবাইল টগল --- */}
+          {/* --- Mobile Toggle --- */}
           <div className="flex items-center gap-3 lg:hidden">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* --- মোবাইল মেনু --- */}
+        {/* --- Mobile Menu --- */}
         <div className={`lg:hidden absolute top-full left-0 w-full bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur-xl border-b border-slate-100 dark:border-white/10 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-4'}`}>
           <div className="px-6 py-8 flex flex-col gap-2">
             {navLinks.map((link, idx) => (
@@ -142,7 +142,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)} 
               className="w-full mt-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-bold shadow-lg shadow-indigo-500/20 active:scale-[0.98] transition-transform text-center block"
             >
-              যোগাযোগ করুন
+              Contact Us
             </Link>
           </div>
         </div>

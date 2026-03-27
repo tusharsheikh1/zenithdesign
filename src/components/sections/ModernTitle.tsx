@@ -1,5 +1,3 @@
-
-
 const ModernTitle = () => {
   return (
     <section id="about" className="relative py-24 lg:py-32 overflow-hidden bg-white dark:bg-slate-950 isolate scroll-mt-20">
@@ -20,16 +18,16 @@ const ModernTitle = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
           </span>
-          ইনোভেটিভ সল্যুশন
+          Innovative Solutions
         </div>
 
         {/* Typography */}
         <h2 className="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-6xl leading-[1.15]">
-          বাংলাদেশে এইবার আমরাই নিয়ে এসেছি
+          For the first time in Bangladesh, we brought
           <br className="hidden md:block" />
           <span className="relative inline-block mt-2">
             <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">
-              সম্পূর্ণ ডিজিটাল ইকোসিস্টেম
+              A Complete Digital Ecosystem
             </span>
             <span className="absolute -inset-1 blur-xl bg-indigo-500/20 -z-10 rounded-full"></span>
           </span>
@@ -37,7 +35,7 @@ const ModernTitle = () => {
 
         {/* Description */}
         <p className="mx-auto mt-8 max-w-2xl text-lg md:text-xl leading-8 text-slate-600 dark:text-slate-300">
-          <span className="font-bold text-slate-900 dark:text-white underline decoration-indigo-500 decoration-2 underline-offset-4">জেনিথ ডিজাইন</span> শুধুমাত্র একটি সার্ভিস প্রোভাইডার নয়, আমরা আপনার ব্যবসার গ্রোথ পার্টনার।
+          <span className="font-bold text-slate-900 dark:text-white underline decoration-indigo-500 decoration-2 underline-offset-4">Zenith Design</span> is not just a service provider, we are your business growth partner.
         </p>
 
       </div>

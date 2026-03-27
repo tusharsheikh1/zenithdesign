@@ -8,9 +8,6 @@ import Stats from '../components/sections/Stats';
 import Team from '../components/sections/Team';
 import Brands from '../components/sections/Brands';
 import BottomCTA from '../components/sections/BottomCTA';
-// You might want to import a "PortfolioTeaser" or keep the Portfolio section here 
-// but link it to the full page.
-import Portfolio from '../components/sections/Portfolio';
 
 const Home = () => {
   return (
@@ -20,7 +17,6 @@ const Home = () => {
       <Services />
       <Pricing />
       <WhyChooseUs />
-      <Portfolio /> {/* Keeping it here as a section, or replace with a teaser */}
       <Testimonials />
       <Stats />
       <Team />

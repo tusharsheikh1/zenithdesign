@@ -4,21 +4,21 @@ import { MessageSquareHeart } from 'lucide-react';
 const Testimonials = () => {
   const reviews = [
     { 
-      name: "ফাতেমা আক্তার", 
-      role: "ফাউন্ডার, ফ্যাশন বিডি", 
-      text: "আমরা আমাদের নতুন ওয়েবসাইটের ডিজাইন এবং পারফরমেন্স নিয়ে খুবই মুগ্ধ। জেনিথ ডিজাইন টিম সত্যিই প্রফেশনাল।", 
+      name: "Fatema Akter", 
+      role: "Founder, Fashion BD", 
+      text: "We are extremely impressed with our new website's design and performance. The Zenith Design team is truly professional.", 
       img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
     },
     { 
-      name: "খালেদ মাহমুদ", 
-      role: "ম্যানেজার, টেক সল্যুশন", 
-      text: "খুবই বন্ধুত্বপূর্ণ আচরণ এবং কাজের মান অসাধারণ। তারা আমার প্রজেক্টটি সময়ের আগেই ডেলিভারি দিয়েছে।", 
+      name: "Khaled Mahmud", 
+      role: "Manager, Tech Solution", 
+      text: "Very friendly behavior and the work quality is outstanding. They delivered my project ahead of time.", 
       img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
     },
     { 
-      name: "জিয়া হাসান", 
-      role: "সিইও, স্টার্টআপ ঢাকা", 
-      text: "ক্রিয়েটিভ ডিজাইন এর সাথে কাজ করাটা ছিল দারুণ অভিজ্ঞতা। তাদের কাস্টমার সাপোর্ট এবং রেসপন্স টাইম সেরা।", 
+      name: "Zia Hasan", 
+      role: "CEO, Startup Dhaka", 
+      text: "Working with Creative Design was a great experience. Their customer support and response time are the best.", 
       img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
     }
   ];
@@ -38,13 +38,13 @@ const Testimonials = () => {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-900/50 text-green-600 dark:text-green-400 text-xs font-bold uppercase tracking-widest">
             <MessageSquareHeart size={14} />
-            ক্লায়েন্ট ফিডব্যাক
+            Client Feedback
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-            আমাদের ক্লায়েন্টরা <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-600">কি বলছেন?</span>
+            What Do Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-600">Clients Say?</span>
           </h2>
           <p className="text-slate-500 dark:text-slate-400 text-lg">
-            আমরা শুধু কাজ করি না, সম্পর্ক তৈরি করি। দেখুন আমাদের সম্মানিত ক্লায়েন্টদের মতামত।
+            We don't just work, we build relationships. See what our honorable clients have to say.
           </p>
         </div>
 

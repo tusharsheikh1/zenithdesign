@@ -42,7 +42,7 @@ export const PriceCard: React.FC<PriceCardProps> = ({ title, price, features, po
           <span className="text-5xl font-extrabold tracking-tight">৳{price}</span>
         </div>
         <p className={`text-xs mt-2 ${popular ? 'text-slate-400' : 'text-slate-400'}`}>
-          শুরু হয়ে প্রজেক্ট অনুযায়ী
+          Starting based on the project
         </p>
       </div>
 
@@ -68,7 +68,7 @@ export const PriceCard: React.FC<PriceCardProps> = ({ title, price, features, po
           ? 'bg-white text-slate-900 hover:bg-indigo-50 shadow-lg shadow-white/10'
           : 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white hover:bg-slate-900 hover:text-white dark:hover:bg-indigo-600'
       }`}>
-        প্যাকেজটি নিন
+        Get Package
       </button>
     </motion.div>
   );

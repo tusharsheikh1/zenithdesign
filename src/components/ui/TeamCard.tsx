@@ -41,7 +41,7 @@ export const TeamCard: React.FC<TeamCardProps> = ({ name, role, img }) => {
             <div className="w-8 h-8 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm flex items-center justify-center">
               <Plus size={16} className="text-white" />
             </div>
-            <span className="text-sm font-medium text-white/90">যোগাযোগ করুন</span>
+            <span className="text-sm font-medium text-white/90">Contact Us</span>
           </div>
 
           {/* Hover State: Social Icons (Slides Up) */}

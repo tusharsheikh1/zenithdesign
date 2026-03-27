@@ -8,8 +8,6 @@ const Counter = ({ value }: { value: number }) => {
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const ref = useRef(null);
   
-  // "once: true" means it counts only the first time you scroll to it.
-  // Remove "once: true" if you want it to count every time you scroll up/down.
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   useEffect(() => {
@@ -28,7 +26,7 @@ const Stats = () => {
       id: 1, 
       value: 1000, 
       suffix: "+", 
-      label: "হ্যাপি ক্লায়েন্ট", 
+      label: "Happy Clients", 
       icon: <Users className="w-6 h-6" />, 
       color: "text-blue-500",
       bg: "bg-blue-500/10",
@@ -38,7 +36,7 @@ const Stats = () => {
       id: 2, 
       value: 1300, 
       suffix: "+", 
-      label: "প্রজেক্ট সম্পন্ন", 
+      label: "Projects Completed", 
       icon: <CheckCircle className="w-6 h-6" />, 
       color: "text-green-500",
       bg: "bg-green-500/10",
@@ -48,7 +46,7 @@ const Stats = () => {
       id: 3, 
       value: 24, 
       suffix: "/7", 
-      label: "সাপোর্ট অ্যাক্টিভ", 
+      label: "Active Support", 
       icon: <Clock className="w-6 h-6" />, 
       color: "text-orange-500", 
       bg: "bg-orange-500/10",
@@ -58,7 +56,7 @@ const Stats = () => {
       id: 4, 
       value: 6, 
       suffix: "+", 
-      label: "বছরের অভিজ্ঞতা", 
+      label: "Years of Experience", 
       icon: <Award className="w-6 h-6" />, 
       color: "text-purple-500", 
       bg: "bg-purple-500/10",
@@ -81,7 +79,7 @@ const Stats = () => {
               key={stat.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }} // Ensures the card fade-in also happens on scroll
+              viewport={{ once: true }} 
               transition={{ duration: 0.5, delay: stat.id * 0.1 }}
               className={`relative group p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 ${stat.border}`}
             >

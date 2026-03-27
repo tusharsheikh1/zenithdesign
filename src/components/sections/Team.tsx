@@ -4,23 +4,23 @@ import { Users, } from 'lucide-react';
 const Team = () => {
   const members = [
     { 
-      name: "মোঃ নজরুল ইসলাম", 
-      role: "সিইও & ফাউন্ডার", 
+      name: "Md. Nazrul Islam", 
+      role: "CEO & Founder", 
       img: "https://www.creativedesign.com.bd/assets/images/team/1766477297Md-Nazrul.jpg" 
     },
     { 
-      name: "মোঃ নাইম হোসেন", 
-      role: "ম্যানেজিং ডিরেক্টর", 
+      name: "Md. Nayeem Hossain", 
+      role: "Managing Director", 
       img: "https://www.creativedesign.com.bd/assets/images/team/1766477332Md-Nayeem.jpg" 
     },
     { 
-      name: "মোঃ জুনায়েদ আলি", 
-      role: "লিড ওয়েব ডিজাইনার", 
+      name: "Md. Junayed Ali", 
+      role: "Lead Web Designer", 
       img: "https://www.creativedesign.com.bd/assets/images/team/1766477366juna.jpg" 
     },
     { 
-      name: "মোঃ ফয়জার আলী", 
-      role: "ক্রিয়েটিভ হেড", 
+      name: "Md. Foyzer Ali", 
+      role: "Creative Head", 
       img: "https://www.creativedesign.com.bd/assets/images/team/1766477404foyzer.jpg" 
     }
   ];
@@ -42,15 +42,15 @@ const Team = () => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm mb-6">
             <Users size={14} className="text-indigo-500" />
             <span className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">
-              আমাদের টিম
+              Our Team
             </span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">
-            মিট করুন <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">মাস্টারমাইন্ডদের</span> সাথে
+            Meet the <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">Masterminds</span>
           </h2>
           <p className="text-slate-500 dark:text-slate-400 text-lg max-w-2xl">
-            ক্রিয়েটিভিটি এবং টেকনোলজির সমন্বয়ে যারা আপনার স্বপ্নকে বাস্তবে রূপ দিচ্ছে।
+            Those who are turning your dreams into reality with a blend of creativity and technology.
           </p>
         </div>
 

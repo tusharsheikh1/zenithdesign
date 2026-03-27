@@ -1,4 +1,3 @@
-
 import { Hexagon, Layers, Command, Ghost, Activity, Aperture, Mountain } from 'lucide-react';
 
 // "Unknown" / Abstract Brand Definitions
@@ -39,7 +38,7 @@ const Brands = () => {
       
       <div className="container mx-auto px-6 mb-8 text-center">
         <p className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">
-          যাদের বিশ্বাস অর্জন করেছি
+          Brands That Trust Us
         </p>
       </div>
 

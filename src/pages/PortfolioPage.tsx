@@ -24,7 +24,7 @@ const PortfolioPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight"
           >
-            আমাদের সফল <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">প্রজেক্টসমূহ</span>
+            Our Successful <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Projects</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ const PortfolioPage = () => {
             transition={{ delay: 0.1 }}
             className="text-slate-400 max-w-2xl mx-auto text-lg md:text-xl font-medium"
           >
-            আমরা শুধুমাত্র কোড করি না, আমরা আপনার ব্যবসার জন্য একটি ডিজিটাল অভিজ্ঞতা তৈরি করি।
+            We don't just code, we create a digital experience for your business.
           </motion.p>
         </div>
       </section>

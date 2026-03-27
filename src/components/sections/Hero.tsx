@@ -179,14 +179,14 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6 text-slate-900 dark:text-white leading-[1.15] transition-colors">
-            আপনার ব্যবসার <br />
+            Digital Growth <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 dark:from-indigo-400 dark:via-purple-400 dark:to-indigo-400 animate-gradient-x">
-              ডিজিটাল গ্রোথ
+              For Your Business
             </span>
           </motion.h1>
           
           <motion.p variants={fadeInUp} className="text-base md:text-lg text-slate-600 dark:text-slate-400 mb-8 md:mb-10 leading-relaxed font-medium transition-colors">
-            আমরা শুধুমাত্র সার্ভিস দেই না, আমরা আপনার ব্যবসার পার্টনার হিসেবে কাজ করি। ই-কমার্স থেকে কর্পোরেট সল্যুশন—সবকিছু এক ছাদের নিচে।
+            We don't just provide services, we work as your business partner. From e-commerce to corporate solutions—everything under one roof.
           </motion.p>
           
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -195,13 +195,13 @@ const Hero = () => {
             <a href="#portfolio" className="relative inline-flex h-12 md:h-14 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-50 group shadow-lg shadow-indigo-500/30">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-indigo-600 px-8 py-1 text-base md:text-lg font-bold text-white backdrop-blur-3xl transition-all group-hover:bg-indigo-700">
-                প্রজেক্ট দেখুন
+                View Projects
               </span>
             </a>
 
             {/* Secondary Button */}
             <a href="#contact" className="h-12 md:h-14 px-8 rounded-full border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
-              <span>ফ্রি কনসালটেন্সি</span>
+              <span>Free Consultancy</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </a>
             

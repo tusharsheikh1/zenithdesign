@@ -27,19 +27,19 @@ const itemVariants = {
 const Portfolio: React.FC<PortfolioProps> = ({ isFullPage = false, limit }) => {
   const [activeFilter, setActiveFilter] = useState('*');
 
-  // ফিল্টার লজিক
+  // Filter Logic
   const filteredItems = activeFilter === '*' 
     ? portfolioItems 
     : portfolioItems.filter(item => item.category === activeFilter);
 
-  // লিমিট অনুযায়ী ডাটা দেখানো (হোম পেজের জন্য)
+  // Show data based on limit (for home page)
   const displayItems = limit ? filteredItems.slice(0, limit) : filteredItems;
 
   const filters = [
-    { label: 'সব প্রজেক্ট', val: '*' },
-    { label: 'ওয়েব ডিজাইন', val: 'web-design' },
-    { label: 'সফটওয়্যার', val: 'software' },
-    { label: 'এসইও', val: 'seo' }
+    { label: 'All Projects', val: '*' },
+    { label: 'Web Design', val: 'web-design' },
+    { label: 'Software', val: 'software' },
+    { label: 'SEO', val: 'seo' }
   ];
 
   return (
@@ -52,7 +52,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ isFullPage = false, limit }) => {
       
       <div className="container mx-auto px-6 relative z-10">
         
-        {/* হোম পেজে থাকলে হেডার দেখাবে, পোর্টফোলিও পেজে থাকলে হাইড থাকবে */}
+        {/* Shows header if on home page, hidden on portfolio page */}
         {!isFullPage && (
           <div className="flex flex-col items-center text-center mb-16">
             <motion.div 
@@ -62,15 +62,15 @@ const Portfolio: React.FC<PortfolioProps> = ({ isFullPage = false, limit }) => {
             >
               <Sparkles size={14} className="text-indigo-500" />
               <span className="text-xs font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">
-                সাকসেস স্টোরি
+                Success Stories
               </span>
             </motion.div>
             
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">
-              আমাদের <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">সেরা কাজসমূহ</span>
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">Best Work</span>
             </h2>
             <p className="text-slate-500 dark:text-slate-400 text-lg max-w-2xl">
-              ক্রিয়েটিভিটি এবং টেকনোলজির সংমিশ্রণে তৈরি আমাদের কিছু সিগনেচার প্রজেক্ট।
+              Some of our signature projects created by blending creativity and technology.
             </p>
           </div>
         )}
@@ -150,14 +150,14 @@ const Portfolio: React.FC<PortfolioProps> = ({ isFullPage = false, limit }) => {
           </AnimatePresence>
         </motion.div>
         
-        {/* হোম পেজের জন্য "See More" বাটন */}
+        {/* "See More" button for Home Page */}
         {!isFullPage && limit && filteredItems.length > limit && (
           <div className="mt-16 text-center">
             <Link 
               to="/portfolio" 
               className="inline-flex items-center gap-2 px-8 py-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-indigo-600 dark:text-indigo-400 font-bold rounded-2xl hover:bg-indigo-600 hover:text-white transition-all shadow-md group"
             >
-              সব প্রজেক্ট দেখুন
+              View All Projects
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -169,7 +169,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ isFullPage = false, limit }) => {
             <div className="w-20 h-20 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mb-6">
               <FolderOpen size={32} className="text-slate-400" />
             </div>
-            <p className="text-slate-500 dark:text-slate-400 text-lg font-medium italic">শীঘ্রই নতুন প্রজেক্ট আসছে...</p>
+            <p className="text-slate-500 dark:text-slate-400 text-lg font-medium italic">New projects coming soon...</p>
           </motion.div>
         )}
       </div>

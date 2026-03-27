@@ -1,4 +1,3 @@
-
 import { Users, Clock, Wallet, CheckCircle2, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -7,24 +6,24 @@ const WhyChooseUs = () => {
   const features = [
     {
       icon: <Users className="w-6 h-6" />,
-      title: "অভিজ্ঞ টিম",
-      desc: "আমাদের রয়েছে অভিজ্ঞ ডেভেলপার এবং মার্কেটারদের একটি দক্ষ টিম।",
+      title: "Experienced Team",
+      desc: "We have a skilled team of experienced developers and marketers.",
       color: "bg-blue-500",
       lightColor: "bg-blue-50 dark:bg-blue-900/20",
       textColor: "text-blue-600 dark:text-blue-400"
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "সময়মত ডেলিভারি",
-      desc: "আমরা প্রজেক্টের ডেডলাইন মেনে কাজ করতে প্রতিশ্রুতিবদ্ধ।",
+      title: "Timely Delivery",
+      desc: "We are committed to completing projects meeting deadlines.",
       color: "bg-orange-500",
       lightColor: "bg-orange-50 dark:bg-orange-900/20",
       textColor: "text-orange-600 dark:text-orange-400"
     },
     {
       icon: <Wallet className="w-6 h-6" />,
-      title: "সাশ্রয়ী মূল্য",
-      desc: "সেরা মানের সেবা, কিন্তু বাজেটের মধ্যেই। কোনো গোপন চার্জ নেই।",
+      title: "Affordable Price",
+      desc: "Top quality service, but within your budget. No hidden charges.",
       color: "bg-green-500",
       lightColor: "bg-green-50 dark:bg-green-900/20",
       textColor: "text-green-600 dark:text-green-400"
@@ -65,8 +64,8 @@ const WhyChooseUs = () => {
                 <Award size={24} />
               </div>
               <div>
-                <p className="text-2xl font-bold text-slate-900 dark:text-white">১০০%</p>
-                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">ক্লায়েন্ট স্যাটিসফ্যাকশন</p>
+                <p className="text-2xl font-bold text-slate-900 dark:text-white">100%</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Client Satisfaction</p>
               </div>
             </motion.div>
 
@@ -77,11 +76,11 @@ const WhyChooseUs = () => {
           {/* 3. Right Side: Content */}
           <div className="w-full lg:w-1/2">
             <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-100 dark:border-indigo-900/50 text-indigo-600 dark:text-indigo-400 text-xs font-bold uppercase tracking-widest">
-              কেন আমরা সেরা?
+              Why Are We The Best?
             </div>
             
             <h2 className="text-3xl md:text-5xl font-bold mb-8 text-slate-900 dark:text-white leading-tight">
-              কেন <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">আমাদেরই</span> বেছে নিবেন?
+              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">Choose Us?</span>
             </h2>
 
             <div className="space-y-8">
@@ -109,7 +108,7 @@ const WhyChooseUs = () => {
             <div className="mt-10 pt-8 border-t border-slate-100 dark:border-slate-800 flex items-center gap-3">
               <CheckCircle2 className="text-green-500" size={20} />
               <p className="text-sm font-medium text-slate-600 dark:text-slate-300">
-                আজই জয়েন করুন আমাদের ২০০+ হ্যাপি ক্লায়েন্ট এর সাথে
+                Join our 200+ happy clients today
               </p>
             </div>
 
